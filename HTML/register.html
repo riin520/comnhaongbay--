@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Cơm Nhà Ông Bảy</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li>
+          <a href="menu-category.html">Thực Đơn</a>
+        </li>
+        <li><a href="menu.html">Đặt hàng</a></li>
+        <li><a href="booking.html">Đặt Bàn</a></li>
+        <li><a href="checkout.html">Thanh Toán</a></li>
+      </ul>
+    </nav>
+    <section class="auth-container">
+      <h2>Đăng ký</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="reg-username">Tên đăng nhập</label>
+          <input type="text" id="reg-username" required />
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Mật khẩu</label>
+          <input type="password" id="reg-password" required />
+        </div>
+        <button type="submit">Đăng ký</button>
+        <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+      </form>
+    </section>
+
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

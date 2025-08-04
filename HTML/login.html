@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .auth-container {
+        max-width: 400px;
+        margin: 80px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        text-align: center;
+      }
+      .auth-container h2 {
+        color: #ff8001;
+        margin-bottom: 20px;
+      }
+      .auth-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .auth-container button {
+        background: #ff8001;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+      .auth-container button:hover {
+        background: #e67000;
+      }
+      .auth-container p {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      .auth-container a {
+        color: #ff8001;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Cơm Nhà Ông Bảy</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li>
+          <a href="menu-category.html">Thực Đơn</a>
+        </li>
+        <li><a href="menu.html">Đặt hàng</a></li>
+        <li><a href="booking.html">Đặt Bàn</a></li>
+        <li><a href="checkout.html">Thanh Toán</a></li>
+      </ul>
+    </nav>
+    <section class="auth-container">
+      <h2>Đăng nhập</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Tên đăng nhập</label>
+          <input type="text" id="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" required />
+        </div>
+        <button type="submit">Đăng nhập</button>
+
+        <p>Chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+      </form>
+    </section>
+
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

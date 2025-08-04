@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../img/comnhaongbay1.ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../img/comnhaongbay1.ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../img/comnhaongbay1.ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../img/comnhaongbay1.ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../img/comnhaongbay1.ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../img/comnhaongbay1.ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../img/comnhaongbay1.ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../img/comnhaongbay1.ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/comnhaongbay1.ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../img/comnhaongbay1.ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/comnhaongbay1.ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../img/comnhaongbay1.ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/comnhaongbay1.ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/comnhaongbay1.ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../img/comnhaongbay1.ico/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Thanh toán - Cơm Nhà Ông Bảy</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu-checkout.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Cơm Nhà Ông Bảy</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        
+        <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="about.html" class="active">Giới Thiệu</a></li>
+        <li>
+          <a href="menu-category.html" class="active">Thực Đơn</a>
+        </li>
+        <li><a href="menu.html" class="active">Đặt hàng</a></li>
+        <li><a href="booking.html" class="active">Đặt Bàn</a></li>
+        <li><a href="checkout.html" class="active">Thanh Toán</a></li>
+      </ul>
+    </nav>
+
+    <section class="checkout-wrapper">
+      <!-- Cột đơn hàng -->
+      <div class="order-summary">
+        <h2>Đơn hàng chi tiết</h2>
+        <div id="checkout-list"></div>
+      </div>
+
+      <!-- Cột thông tin khách -->
+      <div class="customer-info">
+        <h2>Thông tin khách hàng</h2>
+        <form id="customer-form">
+          <div class="form-group">
+            <label for="customer-name">Họ và tên</label>
+            <input type="text" id="customer-name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="customer-phone">Số điện thoại</label>
+            <input
+              type="tel"
+              id="customer-phone"
+              required
+              pattern="[0-9]{9,12}"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="customer-address">Địa chỉ</label>
+            <textarea id="customer-address" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="payment-method">Phương thức thanh toán</label>
+            <select id="payment-method" required>
+              <option value="Chuyển khoản ngân hàng">
+                Chuyển khoản ngân hàng
+              </option>
+              <option value="Thanh toán khi nhận hàng">
+                Thanh toán khi nhận hàng
+              </option>
+              <!-- <option value="QR thanh toán">QR thanh toán</option> -->
+            </select>
+          </div>
+
+          <button type="submit" class="btn-complete">
+            Hoàn tất thanh toán
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="../js/checkout.js"></script>
+    <script src="../js/auth.js"></script>
+    <!-- Modal thông báo đặt hàng thành công -->
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Đặt hàng thành công!</h2>
+        <p id="order-details"></p>
+        <button id="return-menu" class="btn-complete">Quay lại menu</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <h2>SEE YOU SOON!</h2>
+        <p><strong>PHONE NUMBER</strong><br />(012) 345-6789</p>
+        <p>
+          <strong>EMAIL ADDRESS</strong><br />Email:
+          <a href="mailto:info@comnhaongbay.com">info@comnhaongbay.com</a>
+        </p>
+        <p>
+          <strong>Cơm Nhà Ông Bảy</strong><br />123 Đường ABC, Quận 1, TP. HCM
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý user</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Cơm Nhà Ông Bảy</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li>
+          <a href="menu-category.html">Thực Đơn</a>
+        </li>
+        <li><a href="menu.html">Đặt hàng</a></li>
+        <li><a href="booking.html">Đặt Bàn</a></li>
+        <li><a href="checkout.html">Thanh Toán</a></li>
+      </ul>
+      </ul>
+    </nav>
+    <section class="user-container">
+  <h2>Danh sách người dùng</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tên đăng nhập</th>
+        <th>Vai trò</th>
+      </tr>
+    </thead>
+    <tbody id="user-list"></tbody>
+  </table>
+</section>
+
+    <script src="../js/auth.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        loadUsersToTable();
+      });
+    </script>
+  </body>
+</html>

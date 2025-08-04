@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../img/comnhaongbay1.ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../img/comnhaongbay1.ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../img/comnhaongbay1.ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../img/comnhaongbay1.ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../img/comnhaongbay1.ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../img/comnhaongbay1.ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../img/comnhaongbay1.ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../img/comnhaongbay1.ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/comnhaongbay1.ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../img/comnhaongbay1.ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/comnhaongbay1.ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../img/comnhaongbay1.ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/comnhaongbay1.ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/comnhaongbay1.ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../img/comnhaongbay1.ico/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Đặt Hàng</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu-checkout.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Cơm Nhà Ông Bảy</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="about.html" class="active">Giới Thiệu</a></li>
+        <li>
+          <a href="menu-category.html" class="active">Thực Đơn</a>
+        </li>
+        <li><a href="menu.html" class="active">Đặt hàng</a></li>
+        <li><a href="booking.html" class="active">Đặt Bàn</a></li>
+        <li><a href="checkout.html" class="active">Thanh Toán</a></li>
+      </ul>
+    </nav>
+
+    <!-- MENU -->
+    <!-- Thanh lọc -->
+    <div class="menu-filters">
+      <button class="filter-btn active" data-category="all">TẤT CẢ</button>
+      <button class="filter-btn" data-category="Cơm">CƠM</button>
+      <button class="filter-btn" data-category="Canh">CANH</button>
+      <button class="filter-btn" data-category="Cá">CÁ</button>
+      <button class="filter-btn" data-category="thịt">THỊT</button>
+      <button class="filter-btn" data-category="Rau">RAU</button>
+      <button class="filter-btn" data-category="ĐồUống">ĐỒ UỐNG</button>
+      <button class="filter-btn" data-category="trángmiệng">TRÁNG MIỆNG</button>
+    </div>
+
+    <!-- Container 2 cột -->
+    <div class="menu-layout">
+      <!-- Danh sách món -->
+      <div class="menu-items" id="menu-items"></div>
+
+      <!-- Giỏ hàng -->
+      <div class="cart" id="cart">
+        <h3>Chi tiết đơn hàng</h3>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <strong>Tổng cộng: <span id="cart-total">0</span> VND</strong>
+        </div>
+        <button onclick="goToCheckout()">Chuyển tới trang thanh toán</button>
+      </div>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>
+<footer class="footer">
+  <div class="footer-text">
+    <h2>SEE YOU SOON!</h2>
+    <p><strong>PHONE NUMBER</strong><br />(012) 345-6789</p>
+    <p>
+      <strong>EMAIL ADDRESS</strong><br />Email:
+      <a href="./mailto:info@comnhaongbay.com">info@comnhaongbay.com</a>
+    </p>
+    <p><strong>Cơm Nhà Ông Bảy</strong><br />123 Đường ABC, Quận 1, TP. HCM</p>
+  </div>
+</footer>
