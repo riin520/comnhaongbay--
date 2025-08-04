@@ -22,7 +22,7 @@ document.getElementById("register-form")?.addEventListener("submit", (e) => {
   users.push({ username, password, role: "user" });
   saveUsers();
   alert("Đăng ký thành công, hãy đăng nhập");
-  window.location.href = "../HTML/login.html";
+  window.location.href = "/login.html";
 });
 
 // Đăng nhập
@@ -36,7 +36,7 @@ document.getElementById("login-form")?.addEventListener("submit", (e) => {
 
   if (user) {
     localStorage.setItem("loggedInUser", JSON.stringify(user));
-    window.location.href = "../HTML/index.html";
+    window.location.href = "/index.html";
   } else {
     alert("Sai tên đăng nhập hoặc mật khẩu");
   }
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.appendChild(adminLi);
     }
   } else {
-    // Nếu chưa đăng nhập => hiển thị nút Đăng nhập/Đăng ký
+    //  / Nếu chưa đăng nhập => hiển thị nút Đăng nhập/Đăng ký
     const loginLi = document.createElement("li");
     const loginLink = document.createElement("a");
     // Kiểm tra nếu file hiện tại là index.html (nằm ngoài thư mục HTML)

@@ -36,26 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Giỏ Hàng & Thanh Toán
-// ---------------------- DỮ LIỆU MÓN ĂN ----------------------
-// const menuData = [
-//   { id: 1, name: "Cơm nhà cá kho", price: 45000, img: "img/com_ca_kho.jpg" },
-//   {
-//     id: 2,
-//     name: "Cơm sườn nướng",
-//     price: 50000,
-//     img: "img/com_suon_nuong.jpg",
-//   },
-//   { id: 3, name: "Canh cua rau đay", price: 35000, img: "img/canh_cua.jpg" },
-//   { id: 4, name: "Thịt luộc cà pháo", price: 40000, img: "img/thit_luoc.jpg" },
-//   { id: 5, name: "Cá bống kho tiêu", price: 55000, img: "img/ca_bong.jpg" },
-//   {
-//     id: 6,
-//     name: "Rau luộc chấm kho quẹt",
-//     price: 30000,
-//     img: "img/rau_luoc.jpg",
-//   },
-// ];
 
 // ---------------------- GIỎ HÀNG ----------------------
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
