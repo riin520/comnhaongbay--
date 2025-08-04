@@ -36,7 +36,7 @@ document.getElementById("login-form")?.addEventListener("submit", (e) => {
 
   if (user) {
     localStorage.setItem("loggedInUser", JSON.stringify(user));
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   } else {
     alert("Sai tên đăng nhập hoặc mật khẩu");
   }
